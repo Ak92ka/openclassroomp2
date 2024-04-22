@@ -11,7 +11,6 @@
 
 .fa-solid {
     color: var(--main-color);
-    padding-right: 9px
 }
 
 body {
@@ -23,17 +22,30 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -18px;
 }
 
 header nav .logo img {
-    width: 100px;
+    width: 70px;
 }
 
 .nav-cote {
     display: flex;
     justify-content:flex-end;
-    gap: 20px;
-    padding: 20px;
+    gap: 60px;
+    padding: 20px 1px 20px 20px;
+}
+
+.nav-hebergement:hover {
+    color: #0000FF;
+    border-top: 2px #0000FF solid;
+    padding-top: 24px;
+}
+
+.nav-activite:hover {
+    color: #0000FF;
+    border-top: 2px #0000FF solid;
+    padding-top: 24px;
 }
 
 h1 {
@@ -56,6 +68,7 @@ h2 {
     padding: 0px;
     font-weight: 700;
     text-align: center;
+    margin-right: -15px;
 }
 
 ::placeholder {
@@ -67,9 +80,18 @@ h2 {
     color: white;
     border: 0px white solid;
     border-radius: 0px 13px 13px 0px;
-    padding: 8px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.fa-magnifying-glass {
+    display: none;
+    width: 50px;
+    color: white;
+}
+    
 
 .mot-filtre {
     font-weight: 700;
@@ -81,7 +103,7 @@ h2 {
     font-weight: 700;
     border: 1px rgb(208, 207, 207) solid;
     border-radius: 20px;
-    padding: 9px;
+    padding: 9px 16px 9px 16px;
     margin: 4px;
 }
 
@@ -89,16 +111,23 @@ h2 {
     background-color: #dbe9f4;
 }
 
+.icone-filtre {
+    padding-right: 9px;
+}
+
 .icone-info {
     margin-top: 9px;
     margin-bottom: 21px;
     margin-right: 9px;
     border: 1px rgb(212, 212, 212) solid;
-    border-radius: 20px;
+    border-radius: 50%;
+    padding: 3px 7px 3px 7px;
+    font-size: 12px;
 }
 
 form {
     margin-bottom: 20px;
+    padding-top: 10px;
     display: flex;
 }
 
@@ -164,6 +193,11 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.titre-hebergement {
+    margin-top: 3px;
+    margin-bottom: 33px;
 }
 
 .hebergements-cards {
@@ -345,3 +379,69 @@ footer {
 footer h2 {
     padding-top: 10px;
 }
+
+
+@media screen and (max-width: 1024px) {
+	.mot-filtre {
+        display: flex;
+        padding-top: 8px;
+        padding-bottom: 11px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .filtre {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hebergements-cards a article {
+        padding-bottom: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .populaires {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .populaires-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .activite-h2 {
+        padding-left: 22px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .activite-cards {
+        padding-top: 20px;
+        padding-left: 19px;
+    }
+        
+}
+
+@media screen and (max-width: 1024px) {
+    .activite-cards a article img {
+        height: 219px;
+    }
+        
+}
+
+@media screen and (max-width: 1024px) {
+    .activite-cards h3 {
+        padding-left: 14px;
+    }
+}
+
+
