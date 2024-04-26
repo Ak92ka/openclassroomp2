@@ -325,12 +325,26 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .mot-filtre {
+        display: flex;
+        padding-top: 8px;
+        padding-bottom: 11px;
+    }
+
+    .filtre {
+        margin-left: 0px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements-cards a article {
+        padding-bottom: 14px;
     }
 
     .populaires {
@@ -355,12 +369,187 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activite-h2 {
+        padding-left: 22px;
+    }
+
+    .activite-cards {
+        padding-top: 20px;
+        padding-left: 19px;
+    }
+
+    .activite-cards a article img {
+        height: 219px;
+    }
+
+    .activite-cards h3 {
+        padding-left: 14px;
+    }
 }
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 34px 0px 0px 0px
+    }
+
+    .nav-hebergement {
+        border-bottom: 2px rgb(174, 172, 172) solid;
+        padding-bottom: 8px;
+        margin-left: 171px;
+        margin-right: 54px;
+        padding-right: 284px;
+        padding-left: 199px;
+    }
+
+    .nav-activite {
+        border-bottom: 2px rgb(174, 172, 172) solid;
+        padding-bottom: 8px;
+        margin-left: -313px;
+        margin-right: 138px;
+        padding-right: 272px;
+        padding-left: 21px;
+        }
+
+    .nav-hebergement:hover {
+        border-top: none;
+        color: black;
+    }
+
+    .nav-hebergement:active {
+        color: #0000FF;
+        border-top: none;
+        border-bottom: 2px #0000FF solid;
+        
+    }
+
+    .nav-activite:hover {
+        border-top: none;
+        color: black;
+    }
+    
+    .nav-activite:active {
+        color: #0000FF;
+        border-bottom: 2px #0000FF solid;
+        padding-top: 24px;
+    }
+
+    h1 {
+        width: 268px;
+        margin-left: -30px;
+    }
+
+    .p-main {
+        width: 130%;
+        margin-left: -30px;
+    }
+
+    form {
+        margin-left: -30px;
+    }
+
+    .button-recherche {
+        border-radius: 13px 13px 13px 13px;
+        width: 48px;
+    }
+
+    .mot-recherche {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        display: block;
+        color:white;
+    }
+
+    #recherche {
+        padding-right: 34px;
+    }
+    
+    .mot-filtre {
+        margin-left: -30px;
+    }
+
+    .filtre {
+        margin-left: -30px;
+        margin-right: 31px;
+    }
+
+    .p-hebergements {
+        margin-left: -30px;
+        display: flex;
+        width: 330px;
+        }
+
+    .icone-info {
+        margin-top: 6px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0px;
+        width: 136%;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+        width: 286%;
+        }
+
+    .populaires {
+        width: 162%;
+        margin-left: -56px;
+        }
+        
+    
+    .hebergements {
+        margin-left: -53px;
+        width: 134%;
+        }
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+        width: 298%;
+    }
+
+    .hebergements-cards article img {
+        object-fit: cover;
+        }
+
+    .activite-h2 {
+        margin-left: -52px;
+    }
+
+    .activite-cards {
+        display: flex;
+        flex-direction: column;
+        margin-left: -52px;
+    }
+
+    .activite-cards a article {
+        width: 358%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: -53px;
+        width: 171%;
+        padding-left: 26px;
+    }
 }
+
+
+/****** Footer ******/
 
 footer {
     display: flex;
@@ -381,67 +570,8 @@ footer h2 {
 }
 
 
-@media screen and (max-width: 1024px) {
-	.mot-filtre {
-        display: flex;
-        padding-top: 8px;
-        padding-bottom: 11px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .filtre {
-        margin-left: 0px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .hebergements-cards a article {
-        padding-bottom: 14px;
-    }
-}
 
 
 
-@media screen and (max-width: 1024px) {
-    .populaires {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .populaires-cards {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-
-@media screen and (max-width: 1024px) {
-    .activite-h2 {
-        padding-left: 22px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .activite-cards {
-        padding-top: 20px;
-        padding-left: 19px;
-    }
-        
-}
-
-@media screen and (max-width: 1024px) {
-    .activite-cards a article img {
-        height: 219px;
-    }
-        
-}
-
-@media screen and (max-width: 1024px) {
-    .activite-cards h3 {
-        padding-left: 14px;
-    }
-}
 
 
