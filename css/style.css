@@ -491,12 +491,13 @@ a {
 
     #recherche {
         padding-right: 34px;
-        width: 83%;
+        width: 81%;
     }
 
     .filtre {
-        width: 48%;
-    }
+        width: 47%;
+        display: inline-flex;
+        }
 
     .icone-info {
         margin-bottom: 12px;
